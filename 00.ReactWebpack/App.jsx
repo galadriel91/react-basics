@@ -1,8 +1,9 @@
 import React from 'react'
+import 'Style/index'
 
 export const App = () => {
     return (
-        <div>
+        <div className='container'>
             App
         </div>
     )
