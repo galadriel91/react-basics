@@ -1,10 +1,11 @@
 import React from 'react'
+import ReactWebpack from 'Components/ReactWebpack'
 import 'Style/index'
 
 const App = () => {
     return ( 
         <div className='container'>
-            App
+            <ReactWebpack/>
         </div>
     );
 }
