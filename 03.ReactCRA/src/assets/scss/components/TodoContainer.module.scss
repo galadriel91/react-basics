@@ -1,0 +1,29 @@
+.containerWrap{
+    overflow-y: auto;
+    width: 120rem; min-height: 48.8rem; 
+    border-radius:  0 0 1rem 1rem; background: #fff;
+    &::-webkit-scrollbar {
+        width: 1rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: grey;
+        border-radius: 0 0 1rem 0;
+    }
+    &::-webkit-scrollbar-track {
+        background-color: #D6D2C4;
+        border-radius: 0 0 1rem 0;
+    }
+}
+
+@media screen and (max-width:1210px) {
+    .containerWrap{
+        width: 100%;
+        border-radius:  0 0 1rem 1rem;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .containerWrap{
+        min-height: 44.8rem;
+    }
+}

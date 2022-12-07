@@ -1,0 +1,38 @@
+.inputWrap{
+    width: 120rem; height: 5rem; font-size: 0;
+    input{
+        width: calc(100% - 5rem); background: #5684FD;
+        font-size: 1.6rem; font-weight: bold; color: #fff; text-indent: 2rem; line-height: 5rem;
+        &::placeholder{
+            color: #fff;
+        }
+        &:focus{
+            outline: none;
+        }
+    }
+    button{
+        height: 5rem;
+        width: 5rem; background: #2A427D; 
+        font-size: 2rem; font-weight: bold; color: #fff; 
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (max-width:1210px) {
+    .inputWrap{
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width:850px) {
+    form{
+        height: 4.5rem;
+        input{
+            line-height: 4.5rem;
+        }
+        button{
+            height: 4.5rem;
+        }
+    }
+}

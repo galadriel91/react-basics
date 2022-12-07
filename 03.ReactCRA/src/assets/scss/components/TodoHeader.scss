@@ -1,0 +1,21 @@
+header{
+    width: 120rem; height: 6rem; background: #61DBFB; border-radius: 1rem 1rem 0 0;
+    h1{
+        text-align: center; font-size: 3rem; color: #fff; line-height: 6rem;
+    }
+}
+
+@media screen and (max-width:1210px) {
+    header{
+        width: 100%; 
+    }
+}
+
+@media screen and (max-width:850px) {
+    header{
+        height: 5rem; border-radius: 1rem 1rem 0 0;
+        h1{
+            font-size: 2.5rem; line-height: 5rem;
+        }
+    }
+}
