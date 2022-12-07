@@ -7,8 +7,11 @@ export const counterSlice = createSlice({
     title: 'React Todo'
   },
   reducers: {
-    increment: (state) => {
-      state.value += 1
+    ADD_TODO:(state , action) =>{
+      return{
+        ...state,
+        todos: [...state.todos , action.payload]
+      }
     },
     decrement: (state) => {
       state.value -= 1
@@ -20,6 +23,6 @@ export const counterSlice = createSlice({
 })
 
 // Action creators are generated for each case reducer function
-export const { increment, decrement, incrementByAmount } = counterSlice.actions
+export const { ADD_TODO, decrement, incrementByAmount } = counterSlice.actions
 
 export default counterSlice.reducer
