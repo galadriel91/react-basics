@@ -1,11 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit'
-import counterReducer from './features/counter'
+import todoReducer from './features/todo'
 const { composeWithDevTools } = require('redux-devtools-extension')
 const enhancer = composeWithDevTools()
 
 export default configureStore({
   reducer: {
-    counter: counterReducer,
+    todo: todoReducer,
     enhancer
   },
 })

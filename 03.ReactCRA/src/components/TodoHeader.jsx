@@ -1,10 +1,12 @@
 import React from 'react'
+import { useSelector } from 'react-redux'
 import '../assets/scss/components/TodoHeader.scss'
 
 const TodoHeader = () => {
+    const title = useSelector(state => state.todo.title)
     return ( 
         <header>
-            <h1>Todo Header</h1>
+            <h1>{ title }</h1>
         </header>
     );
 }
