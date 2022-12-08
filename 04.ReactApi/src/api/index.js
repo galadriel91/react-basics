@@ -8,6 +8,11 @@ const fetchListItem = (pageName) => {
     return instance.get(`${pageName}/1.json`)
 }
 
+const fetchUserItem = (userId) => {
+    return instance.get(`user/${userId}.json`)
+}
+
 export{
     fetchListItem,
+    fetchUserItem
 }
