@@ -12,6 +12,8 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Navigate replace to="/news"/> }/>
         <Route path="/news" element={<ListPage />}/>
+        <Route path="/ask" element={<ListPage />}/>
+        <Route path="/jobs" element={<ListPage />}/>
       </Routes>
       <ApiLoading loading={false}/>
     </div>

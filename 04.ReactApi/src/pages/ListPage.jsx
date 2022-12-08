@@ -1,5 +1,5 @@
 import React , { useEffect , useCallback } from 'react'
-// import ListItem from 'components/ListItem'
+import ListItem from '../components/ListItem'
 import { useLocation } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
 import { FETCH_LIST } from '../store/features/items'
@@ -9,17 +9,13 @@ const ListPage = () => {
     const lists = useSelector(state=>state.item.lists)
     const location = useLocation()
 
-    const getListItem = useCallback(()=>{
-        dispatch(FETCH_LIST(location.pathname))
-    },[location.pathname])
-
     useEffect(()=>{
-        getListItem()
+        dispatch(FETCH_LIST(location.pathname))
     },[location.pathname])
     
     return (
         <div>
-            {/* <ListItem item={lists}/> */}
+            <ListItem item={lists} />
         </div>
     )
 }

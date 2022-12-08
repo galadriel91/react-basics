@@ -17,11 +17,10 @@ export const itemSlice = createSlice({
     reducers: {
         
     },
-    extraReducers:{
-        [FETCH_LIST.fulfilled]: (state, action) => {
-            // Add user to the state array
-            state.lists.push(action.payload)
-        },
+    extraReducers:(builder) => {
+        builder.addCase(FETCH_LIST.fulfilled , (state , action) => {
+            state.lists = action.payload
+        })
     }
 })
 
