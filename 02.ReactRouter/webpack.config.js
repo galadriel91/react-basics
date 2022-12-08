@@ -10,6 +10,7 @@ module.exports = {
             Image:path.resolve('./src/assets/image/'),
             Components:path.resolve('./src/components/'),
             Store:path.resolve('./src/store/'),
+            Pages:path.resolve('./src/pages/'),
         }
     },
     entry:{
