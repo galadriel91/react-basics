@@ -1,5 +1,5 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit'
-import { fetchListItem , fetchUserItem } from '../../api'
+import { fetchListItem , fetchUserItem , fetchPostItem } from '../../api'
 
 export const FETCH_LIST = createAsyncThunk(
     'item/fetchListByPath',
@@ -17,11 +17,20 @@ export const FETCH_USER = createAsyncThunk(
     }
 )
 
+export const FETCH_POST = createAsyncThunk(
+    'item/fetchPostByid',
+    async(path , thunkAPI)=>{
+        const response = await fetchPostItem(path)
+        return response.data
+    }
+)
+
 export const itemSlice = createSlice({
     name: 'item',
     initialState: {
         lists: [],
-        user:{}
+        user:{},
+        posts:{}
     },
     reducers: {
         
@@ -32,6 +41,9 @@ export const itemSlice = createSlice({
         })
         builder.addCase(FETCH_USER.fulfilled , (state , action) => {
             state.user = action.payload
+        })
+        builder.addCase(FETCH_POST.fulfilled , (state , action) => {
+            state.posts = action.payload
         })
     }
 })
