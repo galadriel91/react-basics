@@ -19,7 +19,7 @@ const App = () => {
         <Route path="/user/:id" element={<UserPage/>}/>
         <Route path="/item/:id" element={<PostPage/>}/>
       </Routes>
-      <ApiLoading loading={false}/>
+      <ApiLoading/>
     </div>
   );
 }

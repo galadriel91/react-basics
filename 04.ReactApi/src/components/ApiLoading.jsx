@@ -1,7 +1,9 @@
 import React from 'react';
+import { useSelector } from 'react-redux'
 import Style from '../assets/scss/components/CraLoading.module.scss'
 
-const ApiLoading = ({ loading }) => {
+const ApiLoading = () => {
+    const loading = useSelector(state=> state.item.isLoading)
     return (
         <div>
             {
