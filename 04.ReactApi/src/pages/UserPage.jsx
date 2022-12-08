@@ -1,6 +1,6 @@
 import React , { useEffect } from 'react'
 import { useParams } from 'react-router-dom'
-import { FETCH_USER } from '../store/features/items'
+import { FETCH_USER } from '../store/features/sync'
 import { useDispatch , useSelector } from 'react-redux'
 import UserItem from '../components/UserItem'
 import Style from '../assets/scss/pages/UserPage.module.scss'

@@ -1,8 +1,8 @@
-import React , { useEffect , useCallback } from 'react'
+import React , { useEffect } from 'react'
 import ListItem from '../components/ListItem'
 import { useLocation } from 'react-router-dom'
 import { useDispatch, useSelector } from 'react-redux'
-import { FETCH_LIST } from '../store/features/items'
+import { FETCH_LIST } from '../store/features/sync'
 
 const ListPage = () => {
     const dispatch = useDispatch()

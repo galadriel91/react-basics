@@ -1,5 +1,5 @@
 import React , { useEffect } from 'react'
-import { FETCH_POST } from '../store/features/items'
+import { FETCH_POST } from '../store/features/sync'
 import { useParams } from 'react-router-dom'
 import { useDispatch , useSelector } from 'react-redux'
 import UserItem from '../components/UserItem'
