@@ -1,5 +1,5 @@
 import React from 'react';
-import Style from '../scss/components/CraNav.module.scss'
+import Style from '../assets/scss/components/CraNav.module.scss'
 import { NavLink , Link } from 'react-router-dom'
 
 const ApiHeader = () => {
