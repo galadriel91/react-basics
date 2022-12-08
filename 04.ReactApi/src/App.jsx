@@ -1,10 +1,11 @@
 import React from 'react'
+import ApiHeader from './assets/components/ApiHeader';
 import './assets/scss/index.scss';
 
 const App = () => {
   return ( 
     <div className='container'>
-      App
+      <ApiHeader/>
     </div>
   );
 }
