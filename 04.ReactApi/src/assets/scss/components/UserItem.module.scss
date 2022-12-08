@@ -1,0 +1,35 @@
+a{
+    transition: all .5s;
+    &:hover{
+        color: #396EB0;
+    }
+}
+
+.userWrap{
+    margin-top: 2rem; display: flex; align-items: center;
+    :global .xi-user-address{
+        font-size: 10rem; color: #777;
+    }
+    .userInfo{
+        margin-left: 1rem;
+        h4{
+            font-size: 1.8rem; color: #000;
+        }
+        p{
+            font-size: 1.6rem; color: #666; font-weight: bold;
+        }
+        span{
+            font-size: 1.6rem; color: #444; font-weight: bold;
+        }
+    }
+}
+.userDesc{
+    margin:1rem 0 0  1rem; font-weight: bold;
+    p{
+        font-size: 1.8rem ; color: #000;
+    }
+    div{
+        margin-top: 1rem;
+        font-size: 1.4rem; color: #777;
+    }
+}

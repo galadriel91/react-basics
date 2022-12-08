@@ -1,0 +1,44 @@
+ul{
+    .itemContainer{
+        transition: all .5s;
+        &:hover{
+            background: #f3ede7;
+        }
+        a{
+            transition: all .5s;
+        }
+        height: 8rem; border-bottom: 1px solid #ddd;
+        .itemWrap{
+            display: flex; align-items: center; 
+            width: 120rem; height: 100%; margin: 0 auto;
+            .indexNumber{
+                width: 5%; text-align: center;
+                font-size: 1.6rem; font-weight: bold; color: #000;
+            }
+            .itemInfo{
+                margin-left: 3rem;
+                p{
+                    a{
+                        font-size: 1.8rem; font-weight: bold; color: #000;
+                        &:hover{
+                            color: #396EB0;
+                        }
+                    }
+                }
+                div{
+                    margin-top: .5rem;
+                    span{
+                        font-weight: bold; font-size: 1.4rem; color: #000;
+                    }
+                    a{
+                        margin: 0 .5rem;
+                        font-size: 1.4rem; color: #777; font-weight: bold;
+                        &:hover{
+                            color: #396EB0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

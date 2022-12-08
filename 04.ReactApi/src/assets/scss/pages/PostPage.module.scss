@@ -1,0 +1,14 @@
+.itemContainer{
+    width: 120rem; margin: 0 auto;
+    .itemWrap{
+        margin-left: 1rem;
+        h1{
+            margin-top: 1rem;
+            font-size: 2.5rem; color: #000;
+        }
+        div{
+            margin-top: 1rem;
+            font-size: 1.4rem; font-weight: bold; color: #777;
+        }
+    }
+}
