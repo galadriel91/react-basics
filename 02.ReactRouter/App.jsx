@@ -1,11 +1,12 @@
 import React from 'react'
-import ReactRedux from 'Components/ReactRedux';
+import RouterNav from 'Components/RouterNav';
 import 'Style/index';
 
 const App = () => {
     return ( 
-        <div className='container'>
-            <ReactRedux/>
+        <div>
+            <RouterNav/>
+            <div className='container'></div>
         </div>
     );
 }

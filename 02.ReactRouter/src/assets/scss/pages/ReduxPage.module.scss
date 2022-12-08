@@ -1,4 +1,4 @@
-div{
+.redux{
     text-align: center;
     h1{
         margin-bottom: 1.5rem;
@@ -25,5 +25,8 @@ div{
                 background: crimson;
             }
         }
+    }
+    button{
+        font-family: 'ChosunGu'; font-size: 1rem;
     }
 }
