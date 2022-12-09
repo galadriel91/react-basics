@@ -12,6 +12,7 @@ const PostPage = () => {
     
     useEffect(()=>{
         dispatch(FETCH_POST(params.id))
+        document.title = `Post | Hacker News`
     },[params.id])
 
     return (

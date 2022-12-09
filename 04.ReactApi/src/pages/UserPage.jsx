@@ -12,6 +12,7 @@ const UserPage = () => {
 
     useEffect(()=>{
         dispatch(FETCH_USER(params.id))
+        document.title = `${params.id} | Hacker News`
     },[params.id])
 
     return (
