@@ -6,7 +6,7 @@ import Style from '../assets/scss/components/TodoInput.module.scss'
 const TodoInput = () => {
     const dispatch = useAppDispatch()
     const [value , setValue] = useState('')
-    const input = useRef<HTMLInputElement>()
+    const input = useRef<HTMLInputElement>(null)
     
     useEffect(()=>{
         input.current?.focus()
@@ -33,7 +33,7 @@ const TodoInput = () => {
 
     return (
         <form className={Style.inputWrap} onSubmit={onSubmitForm}>
-            <input type="text" placeholder="오늘 해야할 일을 입력해 주세요" value={value} onChange={onChangeInput}/>
+            <input type="text" placeholder="오늘 해야할 일을 입력해 주세요" value={value} ref={input} onChange={onChangeInput}/>
             <button className="xi-arrow-right" type="submit"></button>
         </form>
     )
