@@ -1,0 +1,27 @@
+@import './common/reset';
+
+@font-face {
+    font-family: 'ChosunGu';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@1.0/ChosunGu.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: 'ChosunGu'; font-size: 1rem;
+    background: #f3ede7;
+}
+
+button{
+    font-family: 'ChosunGu';
+}
+
+.container{
+    display: flex; justify-content: center; align-items: center; flex-direction: column;
+    height: 100vh;
+}
